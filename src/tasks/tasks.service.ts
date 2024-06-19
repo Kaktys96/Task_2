@@ -22,6 +22,6 @@ export class TasksService {
     }
 
     async delete(id: string): Promise<any> {
-        return this.taskModel.findByIdAndRemove(id).exec();
+        return this.taskModel.findByIdAndDelete(id).exec();
     }
 }
